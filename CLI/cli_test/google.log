@@ -1,0 +1,47 @@
+PING goole.com (217.160.0.201): 56 data bytes
+64 bytes from 217.160.0.201: icmp_seq=0 ttl=46 time=336.499 ms
+64 bytes from 217.160.0.201: icmp_seq=1 ttl=46 time=357.269 ms
+64 bytes from 217.160.0.201: icmp_seq=2 ttl=46 time=380.994 ms
+64 bytes from 217.160.0.201: icmp_seq=3 ttl=46 time=302.600 ms
+64 bytes from 217.160.0.201: icmp_seq=4 ttl=46 time=523.683 ms
+64 bytes from 217.160.0.201: icmp_seq=5 ttl=46 time=340.224 ms
+64 bytes from 217.160.0.201: icmp_seq=6 ttl=46 time=367.545 ms
+64 bytes from 217.160.0.201: icmp_seq=7 ttl=46 time=299.018 ms
+64 bytes from 217.160.0.201: icmp_seq=8 ttl=46 time=299.278 ms
+64 bytes from 217.160.0.201: icmp_seq=9 ttl=46 time=299.571 ms
+64 bytes from 217.160.0.201: icmp_seq=10 ttl=46 time=344.372 ms
+64 bytes from 217.160.0.201: icmp_seq=11 ttl=46 time=368.205 ms
+64 bytes from 217.160.0.201: icmp_seq=12 ttl=46 time=390.488 ms
+64 bytes from 217.160.0.201: icmp_seq=13 ttl=46 time=424.464 ms
+64 bytes from 217.160.0.201: icmp_seq=14 ttl=46 time=331.708 ms
+64 bytes from 217.160.0.201: icmp_seq=15 ttl=46 time=378.923 ms
+64 bytes from 217.160.0.201: icmp_seq=16 ttl=46 time=376.382 ms
+64 bytes from 217.160.0.201: icmp_seq=17 ttl=46 time=395.201 ms
+64 bytes from 217.160.0.201: icmp_seq=18 ttl=46 time=416.463 ms
+64 bytes from 217.160.0.201: icmp_seq=19 ttl=46 time=439.190 ms
+64 bytes from 217.160.0.201: icmp_seq=20 ttl=46 time=354.546 ms
+92 bytes from 217-160-0-201.elastic-ssl.ui-r.com (217.160.0.201): Destination Port Unreachable
+Vr HL TOS  Len   ID Flg  off TTL Pro  cks      Src      Dst
+ 4  5  00 5400 bdf4   0 0000  32  01 249f 192.168.11.4  217.160.0.201 
+
+Request timeout for icmp_seq 21
+64 bytes from 217.160.0.201: icmp_seq=22 ttl=46 time=400.755 ms
+64 bytes from 217.160.0.201: icmp_seq=23 ttl=46 time=321.390 ms
+64 bytes from 217.160.0.201: icmp_seq=24 ttl=46 time=299.318 ms
+64 bytes from 217.160.0.201: icmp_seq=25 ttl=46 time=364.441 ms
+64 bytes from 217.160.0.201: icmp_seq=26 ttl=46 time=384.839 ms
+64 bytes from 217.160.0.201: icmp_seq=27 ttl=46 time=408.261 ms
+64 bytes from 217.160.0.201: icmp_seq=28 ttl=46 time=328.615 ms
+64 bytes from 217.160.0.201: icmp_seq=29 ttl=46 time=353.361 ms
+64 bytes from 217.160.0.201: icmp_seq=30 ttl=46 time=475.242 ms
+64 bytes from 217.160.0.201: icmp_seq=31 ttl=46 time=393.512 ms
+64 bytes from 217.160.0.201: icmp_seq=32 ttl=46 time=438.677 ms
+64 bytes from 217.160.0.201: icmp_seq=33 ttl=46 time=299.867 ms
+64 bytes from 217.160.0.201: icmp_seq=34 ttl=46 time=358.529 ms
+64 bytes from 217.160.0.201: icmp_seq=35 ttl=46 time=377.329 ms
+64 bytes from 217.160.0.201: icmp_seq=36 ttl=46 time=298.949 ms
+64 bytes from 217.160.0.201: icmp_seq=37 ttl=46 time=421.691 ms
+
+--- goole.com ping statistics ---
+38 packets transmitted, 37 packets received, 2.6% packet loss
+round-trip min/avg/max/stddev = 298.949/368.957/523.683/52.001 ms
