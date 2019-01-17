@@ -1,0 +1,49 @@
+* {
+    font-family: 'Coiny', cursive;
+}
+.square { 
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+}
+.padding-10 {
+    padding: 10px;
+}
+.border-box {
+    box-sizing: border-box;
+}
+.margin-100 {
+    margin: 100px;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+}
+
+.margin-50 {
+    margin: 50px 50px 50px 50px;
+}
+.margin-3 {
+    margin: 10px 20px 30px;
+}
+.border {
+    /* border: 1px solid aqua; */
+    border-style: dashed;
+    border-bottom-style: double;
+    border-top-style: solid;
+    border-left-style: inset;
+    border-bottom-color: aqua;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: darkgoldenrod;
+}
+
+.football {
+    width: 90px;
+    height: 90px;
+    background-color: brown;
+    border-radius: 15px 75px;
+}

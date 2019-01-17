@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="06.css">
+</head>
+
+<body>
+    <div class="square">
+        <div class="relative-box square"></div>
+    </div>
+    <br>
+    <div class="square">
+        <div class="absolute-box square"></div>
+    </div>
+    <div class="fixed">
+        포지션연습
+    </div>
+    <br><br><br>
+
+    
+    <!-- z-index 프로퍼티에 큰 숫자값을 지정할수록 화면 전면에 출력된다. 
+        positon 프로퍼티가 static 이외인 요소에만 적용된다. -->
+    <div class="absolute-box square z-index-1"></div>
+    <div class="absolute-box square z-index-2"></div>
+    <div class="absolute-box square z-index-3"></div>
+
+
+</body>
+
+</html>

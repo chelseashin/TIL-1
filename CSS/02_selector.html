@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="02.css">
+</head>
+<body>
+    <p>빨간색</p>
+    <!-- 개발자 도구로 색깔 덮혀진거 확인 -->
+    <h1>TAG 선택자</h1>
+    <h2 class="pink">클래스 선택자</h2>
+    <h3 id="green">아이디 선택자</h3>
+    <h3 id="yellow" class="pink">id > class</h3>
+    <h2 class="pink">class > tag</h2>
+    <!-- css 를 적용시키기 위해서는 마크업을 하고 선택자를 부여한다.
+    span, div 태그는 의미는 없지만 css 적용을 위해서 사용한다.  -->
+    
+    <p><span class="pink">핑크색</span>, <span id="yellow">노란색</span></p>
+    <!-- 정답! span태그와 div태그는 모두 의미는 없지만 '마크업'을 해야 css를 적용시킬 수 있기 때문에 활용된다. 
+                사람이 색칠한다면 아무곳에나 할 수 있지만, 컴퓨터니까 특정한 곳을 지정해야하고 따라서 선택자가 필요하고 
+                선택자를 잡기 위해서는 마크업이 필요한 것이다!
+                덧붙이면, 왜 시맨틱태그를 사용하는지에 대해서도 알아보자! 우선 bold class를 글씨체를 굵게 만들어서 표현해보자.
+            -->
+    
+    
+    <!-- 아래 처럼 pink 가 마지막에 써졌지만 css 코드상으로 blue 가 마지막에 선언되었기 때문에 blue 가 나온다. -->
+    <p class="bold blue pink">볼드체</p>
+    <p><strong>볼드체</strong></p>
+    <p><b>볼드체</b></p>
+    <!-- 사용자 입장에서는 두 경우 모두 똑같이 보인다. 모두 볼드체로 표현됨. 
+                다만, 달라지는 점이 무엇일까라고 했을 때, tag를 통해 여기는 강조 혹은 볼드체라는 것을 명시!
+                따라서 단순 볼드체를 하기위해서 strong 태그를 남발하는 경우에는 브라우저가 모든 볼드체가 강조해야하는 부분이라고 생각한다.
+                일부 스크린리더가 읽을 때 실제로 strong 태그를 읽어나갈때 강하게 발음하도록 구성되기도 하기 때문에 조심하자!
+                물론 b태그도 있다!
+            -->
+</body>
+</html>
