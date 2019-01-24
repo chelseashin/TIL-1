@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <style>
+        .container {
+            height: 800px;
+            padding: 16px;
+            border: 2px solid royalblue;
+        }
+        .item {
+            padding: 16px;
+            border: 1px solid crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1) flex-row / flex-column
+        아이템을 행이나 열로 배치할 수 있다. 기본값은 row
+        row-reverse / column-reverse 로 배치를 뒤집을 수 있다. -->
+    <!-- 2) justify-content (기본적으로 행 조정) 
+        start : 왼쪽으로 (기본)
+        end : 오른쪽으로 
+        center : 가운데로
+        between : 아이템들 사이에 동일한 간격
+        around : 아이템 주위에 동일한 간격 -->
+    <!-- 3) align-items (기본적으로 열 조정) 
+        start : 위쪽으로
+        end : 아래쪽으로
+        center : 중앙으로
+        stretch: 부모의 크기만큼 늘린다. (기본) -->
+    <!-- 4) flex-wrap 
+        아이템이 부모의 크기를 넘어가지 못하게 만든다.
+        flex-nowrap(기본) -->
+    <!-- 5) align-self (아이템 전용)
+        start : 위
+        end : 아래
+        center :  중앙 
+        stratch : 늘리긴-->
+    <div class="container d-flex flex-row justify-content-between align-items-start flex-wrap">
+       <div class="item flex-grow-1 order-1">01</div>
+       <div class="item">02</div>
+       <div class="item">03</div>
+       <div class="item">04</div>
+       <div class="item align-self-center">05</div>
+       <div class="item">06</div>
+       <div class="item order-2">07</div>
+       <div class="item align-self-end">08</div>
+       <div class="item">09</div>
+       <div class="item flex-grow-1">10</div> 
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
