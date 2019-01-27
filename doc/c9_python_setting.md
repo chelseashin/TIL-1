@@ -28,6 +28,7 @@ $ source ~/.bashrc
 ```
 
 - python 설치
+> ubuntu openssl 이슈 때문에, python 3.6.7을 설치해야 함.
 
 ```bash
 $ pyenv install --list		# 설치할 수 있는 목록 확인
@@ -60,13 +61,13 @@ $ source ~/.bashrc
 - 가상환경 만들기
 
 ```bash
-$ pyenv virtualenv <파이썬버전> <가상환경 이름>
+$ pyenv virtualenv <파이썬버전> <가상환경 이름> # (1) 특정 파이썬 버전으로 가상환경 생성
 
-$ pyenv virtualenv <가상환경이름>  # 또는, 그냥 현재 파이썬 버전으로 만들고 싶다면
+$ pyenv virtualenv <가상환경이름>  # (2) 그냥 현재 파이썬 버전으로 생성하고 싶다면
 
-$ pyenv versions				# pyenv 를 이용해 만든 파이썬 버전들을 출력
+$ pyenv versions				   # pyenv 를 이용해 만든 파이썬 버전들을 출력
 
-$ pyenv virtualenvs				# 설치된 가상환경 목록만 확인
+$ pyenv virtualenvs				   # 설치된 가상환경 목록만 확인
 ```
 
 - 가상환경 사용하기 - 1 (global)
@@ -86,7 +87,7 @@ $ pyenv deactivate
 > local 은 해당 디렉토리를 빠져나오면 자동으로 deactivate 된다.
 
 ```bash
-### [주의] 가상환경으로 지정 할 디텍토리로 이동 !!!
+### [주의] 설정 전 가상환경으로 지정 할 디텍토리로 이동 !!!
 # 현재 디렉토리를 특정 가상환경으로 설정
 $ pyenv local <가상환경 이름>
 ```
@@ -124,7 +125,7 @@ $ pip list
 >
 > ```bash
 > $ export FLASK_APP=project.py 		# 한번만하면 더이상 하지 않아도 됨
-> $ flask run 						# local 기준
+> $ flask run 						# 서버 실행 (local 기준)
 > ```
 
 - 설치
@@ -133,10 +134,26 @@ $ pip list
 $ pip install flask
 ```
 
-- c9 에서 서버 실행
+- 서버 실행 (c9 기준)
 
 ```bash
 $ flask run --host=0.0.0.0 --port=8080
 $ flask run --host 0.0.0.0 --port 8080
 $ flask run --host=$HOST --port=$PORT
 ```
+
+- 편하게 서버 실행
+
+```python
+import os
+```
+
+```python
+if __name__ == '__main__':
+    app.run(host=os.getenv('IP'), port=os.getenv('PORT'), debug=True)
+```
+
+```bash
+$ python app.py
+```
+
