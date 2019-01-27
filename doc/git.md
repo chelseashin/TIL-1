@@ -36,10 +36,7 @@ $ git config --global --list
 
 ```bash
 $ git init
-$ git add .
-$ git commit -m "example"
 $ git remote add origin https://github.com/example
-$ git push -u origin master
 ```
 
 - Git repo 를 clone 한 경우
