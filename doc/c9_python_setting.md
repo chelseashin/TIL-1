@@ -140,6 +140,7 @@ $ pip install flask
 $ flask run --host=0.0.0.0 --port=8080
 $ flask run --host 0.0.0.0 --port 8080
 $ flask run --host=$HOST --port=$PORT
+$ flask run -h $IP -p $PORT
 ```
 
 - 편하게 서버 실행
