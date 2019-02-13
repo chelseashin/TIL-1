@@ -88,8 +88,12 @@ $ pyenv deactivate
 
 ```bash
 ### [주의] 설정 전 가상환경으로 지정 할 디텍토리로 이동 !!!
+
 # 현재 디렉토리를 특정 가상환경으로 설정
 $ pyenv local <가상환경 이름>
+
+# 디렉토리 가상환경 설정 취소 (가상환경 폴더에서 숨김파일 삭제)
+$ rm -rf .python-version
 ```
 
 - 가상환경 삭제
@@ -157,4 +161,3 @@ if __name__ == '__main__':
 ```bash
 $ python app.py
 ```
-
